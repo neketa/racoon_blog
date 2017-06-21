@@ -18,21 +18,50 @@ html, body {
 }
 
 .navigation__container {
-    height: 60px;
     background-color: #6A99CF;
     display: flex;
+    border-bottom: 4px solid #AFCBF1;
 }
 
-.navigation-items {
+.navigation-items__list {
+    padding: 0;
     display: flex;
-    width: 500px;
     margin: auto;
     list-style-type: none;
     text-transform: uppercase;
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    justify-content: space-between;
+}
+.navigation-item__container {
+    position: relative;
+    display: flex;
+}
+.navigation-item__container:before {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 5px);
+    border: 15px solid transparent;
+    border-top: 10px solid #AFCBF1;
+    
+
+}
+.navigation-item__container:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 10px solid transparent;
+    border-top: 6px solid #6A99CF;
+
+}
+
+
+.navigation-item__inputs {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2rem;
 }
 
 .container {
@@ -52,6 +81,7 @@ html, body {
     display: flex;
     width: 640px;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .post__header {
@@ -74,6 +104,20 @@ html, body {
     font-size: 25px;
     margin: 0 10px;
 }
+.post-loader {
+	width: 50px;
+	height: 50px;
+	margin: 100px auto;
+	border: 5px solid #6194C0;
+	border-radius: 50%;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	100%{ transform: rotate(360deg);}
+}
 
 .aside {
     display: flex;
@@ -88,6 +132,8 @@ html, body {
 }
 
 .aside-article__icon {
+    font-weight: bold;
+    font-size: 22px;
     margin: 0 15px;
     color: #fff;
 }
@@ -100,5 +146,34 @@ html, body {
     text-transform: uppercase;
     color: #6194C0;
     letter-spacing: 3px;
+}
 
+.aside-tag {
+    background-color: #6194C0;
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    margin: 2px 5px;;
+}
+.aside-tag__text {
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.aside-tag:before {
+    content: ' ';
+    border: 10px solid transparent;
+	border-left: 10px solid #6194C0;
+    position: absolute;
+    left: 100%;
+}
+
+.aside-tag:after {
+    content: '•';
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: -15%;
+    left: 90%;
 }

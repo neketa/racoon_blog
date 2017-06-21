@@ -18,12 +18,17 @@
             <a class="logo__link" href="#"><img src="logo.png" alt="racoon blog logo"></a>
         </div>
         <nav class="navigation__container">
-            <ul class="navigation-items">
-                <li class="navigation-items__button">javascript</li>
-                <li class="navigation-items__button">css</li>
-                <li class="navigation-items__button">lattest</li>
-                <li class="navigation-items__button">html</li>
-                <li class="navigation-items__button">design</li>
+            <ul class="navigation-items__list">
+                <li class="navigation-item__container"><input id="navigation-item__input-javascript__checked" type="radio" name="nav-items"><label class="navigation-item__inputs"
+                        for="navigation-item__input-javascript__checked">javascript</label></li>
+                <li class="navigation-item__container"><input id="navigation-item__input-css" type="radio" name="nav-items"><label class="navigation-item__inputs"
+                        for="navigation-item__input-css">css</label></li>
+                <li class="navigation-item__container"><input id="navigation-item__input-lattest" type="radio" name="nav-items"><label class="navigation-item__inputs"
+                        for="navigation-item__input-lattest">lattest</label></li>
+                <li class="navigation-item__container"><input id="navigation-item__input-html" type="radio" name="nav-items"><label class="navigation-item__inputs"
+                        for="navigation-item__input-html">html</label></li>
+                <li class="navigation-item__container"><input id="navigation-item__input-design" type="radio" name="nav-items"><label class="navigation-item__inputs"
+                        for="navigation-item__input-design">design</label></li>
             </ul>
         </nav>
     </header>
@@ -32,19 +37,23 @@
             <article class="post">
                 <img src="flowers.png" alt="flowers" height="250px" width="640px">
                 <h2 class="post__header">Blogotitle of blogpost about blogflowers</h2>
-                <hr>
+                <hr width="100%">
                 <div class="post-info">
                     <span class="post-info__time"><i class="fa fa-clock-o" aria-hidden="true"></i>22:58 Jan 01, 2014</span>
                     <span class="post-info__author">by E. Hyperracoon</span>
                     <ul class="share-post__container" type="none">
+                        <li class="share-post__item">
+                            <svg viewBox="0 0 100 100" class="icon shape-codepen">
+                                <use xlink:href="sprite.svg#icon-menu"></use>
+                            </svg>
+                        </li>
                         <li class="share-post__item"><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
-                        <li class="share-post__item"><i class="fa fa-google-plus-square" aria-hidden="true"></i></li>
                         <li class="share-post__item"><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
                         <li class="share-post__item"><i class="fa fa-vk" aria-hidden="true"></i></li>
                         <li class="share-post__item"><i class="fa fa-yahoo" aria-hidden="true"></i></li>
                     </ul>
                 </div>
-                <hr>
+                <hr width="100%">
                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus repudiandae architecto dolorum unde
                     eum a, earum! Obcaecati, consequatur perspiciatis ab. Consectetur, corrupti assumenda dolore! Modi perspiciatis
                     labore deleniti enim debitis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus repudiandae
@@ -55,7 +64,7 @@
             <article class="post">
                 <img src="flowers.png" alt="flowers" height="250px" width="640px">
                 <h2 class="post__header">Blogotitle of blogpost about blogflowers</h2>
-                <hr>
+                <hr width="100%">
                 <div class="post-info">
                     <span class="post-info__time"><i class="fa fa-clock-o" aria-hidden="true"></i>22:58 Jan 01, 2014</span>
                     <span class="post-info__author">by E. Hyperracoon</span>
@@ -67,7 +76,7 @@
                         <li class="share-post__item"><i class="fa fa-yahoo" aria-hidden="true"></i></li>
                     </ul>
                 </div>
-                <hr>
+                <hr width="100%">
                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus repudiandae architecto dolorum unde
                     eum a, earum! Obcaecati, consequatur perspiciatis ab. Consectetur, corrupti assumenda dolore! Modi perspiciatis
                     labore deleniti enim debitis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus repudiandae
@@ -75,11 +84,12 @@
                     dolore!
                 </p>
             </article>
+            <div class="post-loader"></div>
         </main>
         <aside class="aside">
             <article class="aside-article">
                 <div class="aside-article__caption-container">
-                    <h2 class="aside-article__icon">?</h2>
+                    <span class="aside-article__icon">?</span>
                     <h2 class="aside-article__caption">about</h2>
                 </div>
                 <p class="aside-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum hic, architecto nulla cum quod quasi,
@@ -89,7 +99,7 @@
             </article>
             <article class="aside-article">
                 <div class="aside-article__caption-container">
-                    <h2 class="aside-article__icon">!</h2>
+                    <span class="aside-article__icon">!</span>
                     <h2 class="aside-article__caption">some shit</h2>
                 </div>
                 <p class="aside-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum hic, architecto nulla cum quod quasi,
@@ -97,6 +107,23 @@
                     possimus!
                 </p>
             </article>
+            <div class="aside-tags__container">
+                <div class="aside-tag">
+                    <a class="aside-tag__text">racoon</a>
+                </div>
+                <div class="aside-tag">
+                    <a class="aside-tag__text">racoon</a>
+                </div>
+                <div class="aside-tag">
+                    <a class="aside-tag__text">racoon</a>
+                </div>
+                <div class="aside-tag">
+                    <a class="aside-tag__text">racoon</a>
+                </div>
+                <div class="aside-tag">
+                    <a class="aside-tag__text">racoon</span>
+                </div>
+            </div>
         </aside>
 
     </div>
