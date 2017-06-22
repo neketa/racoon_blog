@@ -22,7 +22,9 @@ html, body {
     display: flex;
     border-bottom: 4px solid #AFCBF1;
 }
-
+#icon-menu {
+    fill: #6A99CF;
+}
 .navigation-items__list {
     padding: 0;
     display: flex;
@@ -56,7 +58,6 @@ html, body {
     border-top: 6px solid #6A99CF;
 
 }
-
 
 .navigation-item__inputs {
     text-decoration: none;
@@ -94,15 +95,32 @@ html, body {
     justify-content: space-between;
     align-items: center;
 }
+.post-info svg {
+    width: 18px;
+    height: 18px;
+}
 
 .share-post__container {
     display: flex;
     margin: 0;
     
 }
+.share-post__item svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+}
 .share-post__item {
     font-size: 25px;
-    margin: 0 10px;
+    margin: 0 5px;
+    background-color: #D2DAE3;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.share-post__item-counter {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 5px;
 }
 .post-loader {
 	width: 50px;
