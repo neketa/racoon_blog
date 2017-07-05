@@ -7,85 +7,79 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Racoon Blog</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-        <link rel="stylesheet/less" type="text/css" href="style.less" />
-        <script src="less.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-<body>
+<body class="page">
         <header class="header">
-                <a class="header__logo" href="#"><img src="logo.png" alt="racoon blog logo"></a>
+                <a href="#"><img src="logo.png" alt="racoon blog logo"></a>
         </header>
         <nav>
-                <ul class="navigation-list">
-                        <li class="navigation-list__item"><a class="navigation-list__item-link" href="#"><input class="navigation-item__input_hidden" id="navigation-item__input-javascript" type="radio" name="nav-items"
-                    checked hidden /><label class="navigation-list__item-link__label_for_input" for="navigation-item__input-javascript">javascript</label></a></li>
-                        <li class="navigation-list__item"><a class="navigation-list__item-link" href="#"><input class="navigation-item__input_hidden" id="navigation-item__input-css" type="radio" name="nav-items" hidden /><label class="navigation-list__item-link__label_for_input"
-                    for="navigation-item__input-css">css</label></a></li>
-                        <li class="navigation-list__item"><a class="navigation-list__item-link" href="#"><input class="navigation-item__input_hidden" id="navigation-item__input-lattest" type="radio" name="nav-items" hidden /><label class="navigation-list__item-link__label_for_input"
-                    for="navigation-item__input-lattest">lattest</label></a></li>
-                        <li class="navigation-list__item"><a class="navigation-list__item-link" href="#"><input class="navigation-item__input_hidden" id="navigation-item__input-html" type="radio" name="nav-items" hidden /><label class="navigation-list__item-link__label_for_input"
-                    for="navigation-item__input-html">html</label></a></li>
-                        <li class="navigation-list__item"><a class="navigation-list__item-link" href="#"><input class="navigation-item__input_hidden" id="navigation-item__input-design" type="radio" name="nav-items" hidden /><label class="navigation-list__item-link__label_for_input"
-                    for="navigation-item__input-design">design</label></a></li>
+                <ul class="navigation">
+                        <li><a class="navigation__link" href="#">javascript</a></li>
+                        <li><a class="navigation__link" href="#">css</a></li>
+                        <li><a class="navigation__link" href="#">latest</a></li>
+                        <li><a class="navigation__link" href="#">html</a></li>
+                        <li><a class="navigation__link" href="#">design</a></li>
                 </ul>
         </nav>
         <div class="container">
                 <main class="content">
                         <article class="post">
-                                <img class="post-img" src="flowers.png" alt="flowers" height="250px" width="640px">
-                                <header class="post-header">
-                                        <h2 class="post-header__text">Blogotitle of blogpost about blogflowers</h2>
+                                <img src="flowers.png" alt="flowers" height="250px" width="640px">
+                                <header>
+                                        <h2 class="post__header">Blogotitle of blogpost about blogflowers</h2>
                                 </header>
-                                <hr width="100%">
-                                <div class="post-info">
-                                        <div class="post-info__time">
-                                                <svg class="post-info__mini-icon">
+                                <hr class="post__separator" width="100%">
+                                <div class="info">
+                                        <div class="info__item">
+                                                <svg class="info__item-icon">
                                                         <use xlink:href="sprite.svg#icon-clock" />
                                                 </svg>
-                                                <span class="post-info__time-text">22:58 Jan 01, 2014</span>
+                                                <span class="info__item-text">22:58 Jan 01, 2014</span>
                                         </div>
-                                        <div class="post-info__author">
-                                                <svg class="post-info__mini-icon">
+                                        <div class="info__item">
+                                                <svg class="info__item-icon">
                                                         <use xlink:href="sprite.svg#icon-footstep" />
                                                 </svg>
-                                                <span class="post-info__author-text">by E. Hyperracoon</span>
+                                                <span class="info__item-text">by E. Hyperracoon</span>
                                         </div>
-                                        <ul class="post-info__share-menu" type="none">
-                                                <li class="post-info__share-menu__item">
-                                                        <svg class="post-info__share-menu__item-icon">
+                                        <ul class="socials" type="none">
+                                                <li class="socials__item socials__item--facebook">
+                                                        <svg class="socials__item-icon">
                                                                 <use xlink:href="sprite.svg#icon-facebook" />
                                                         </svg>
-                                                        <span class="post-info__share-menu__item-counter">16</span>
+                                                        <span class="socials__item-counter">16</span>
                                                 </li>
-                                                <li class="post-info__share-menu__item">
-                                                        <svg class="post-info__share-menu__item-icon">
+                                                <li class="socials__item socials__item--gplus">
+                                                        <svg class="socials__item-icon">
                                                                 <use xlink:href="sprite.svg#icon-gplus" />
                                                         </svg>
-                                                        <span class="post-info__share-menu__item-counter">7</span></li>
-                                                <li class="post-info__share-menu__item">
-                                                        <svg class="post-info__share-menu__item-icon">
+                                                        <span class="socials__item-counter">7</span></li>
+                                                <li class="socials__item socials__item--twitter">
+                                                        <svg class="socials__item-icon">
                                                                 <use xlink:href="sprite.svg#icon-twitter" />
                                                         </svg>
-                                                        <span class="post-info__share-menu__item-counter">15</span>
+                                                        <span class="socials__item-counter">15</span>
                                                 </li>
-                                                <li class="post-info__share-menu__item">
-                                                        <svg class="post-info__share-menu__item-icon">
+                                                <li class="socials__item socials__item--vk">
+                                                        <svg class="socials__item-icon">
                                                                 <use xlink:href="sprite.svg#icon-vk" />
                                                         </svg>
-                                                        <span class="post-info__share-menu__item-counter">16</span>
+                                                        <span class="socials__item-counter">16</span>
                                                 </li>
-                                                <li class="post-info__share-menu__item">
-                                                        <svg class="post-info__share-menu__item-icon">
+                                                <li class="socials__item socials__item--yaru">
+                                                        <svg class="socials__item-icon">
                                                                 <use xlink:href="sprite.svg#icon-yaru" />
                                                         </svg>
-                                                        <span class="post-info__share-menu__item-counter">1</span>
+                                                        <span class="socials__item-counter">1</span>
                                                 </li>
                                         </ul>
                                 </div>
-                                <hr width="100%">
-                                <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus repudiandae architecto
+                                <hr class="post__separator" width="100%">
+                                <p class="post__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus repudiandae architecto
                                         dolorum unde eum a, earum! Obcaecati, consequatur perspiciatis ab. Consectetur, corrupti
                                         assumenda dolore! Modi perspiciatis labore deleniti enim debitis?Lorem ipsum dolor
                                         sit amet, consectetur adipisicing elit. Repellendus repudiandae architecto dolorum
@@ -93,27 +87,40 @@
                                         assumenda dolore!
                                 </p>
                         </article>
-                        <div class="post-loader"></div>
+                        <div class="post__loader"></div>
                 </main>
                 <aside class="aside">
-                        <article class="aside-article">
-                                <header class="aside-article__header">
-                                        <h2 class="aside-article__header-text">about</h2>
+                        <section class="aside-section">
+                                <header>
+                                        <h3 class="aside-section__title aside-section__title--about">About</h3>
                                 </header>
-                                <p class="aside-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum hic, architecto nulla
+                                <p class="aside-section__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum hic, architecto nulla
                                         cum quod quasi, voluptatibus sequi ab maiores sit neque provident doloribus unde
-                                        asperiores autem fugiat omnis vitae possimus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum hic, architecto nulla
-                                        cum quod quasi, voluptatibus sequi ab maiores sit neque provident doloribus unde
-                                        asperiores autem fugiat omnis vitae possimus!
+                                        asperiores autem fugiat omnis vitae possimus!Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Voluptatum hic, architecto nulla cum quod quasi, voluptatibus sequi
+                                        ab maiores sit neque provident doloribus unde asperiores autem fugiat omnis vitae
+                                        possimus!
                                 </p>
-                        </article>
-                        <ul class="tag-list">
-                                <li class="tag-list__item"><a class="tag-list__item-link">racoon</a></li>
-                        </ul> 
+                        </section>
+                        <section class="aside-section">
+                                <header>
+                                        <h3 class="aside-section__title aside-section__title--stuff">Some shit</h3>
+                                </header>
+                                <p class="aside-section__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum hic, architecto nulla
+                                        cum quod quasi, voluptatibus sequi ab maiores sit neque provident doloribus unde
+                                        asperiores autem fugiat omnis vitae possimus!Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Voluptatum hic, architecto nulla cum quod quasi, voluptatibus sequi
+                                        ab maiores sit neque provident doloribus unde asperiores autem fugiat omnis vitae
+                                        possimus!
+                                </p>
+                        </section>
+                        <ul class="tags">
+                                <li class="tags__item"><a class="tags__item-link">racoon</a></li>
+                        </ul>
                 </aside>
         </div>
 
 </body>
-                        
+
 
 </html>

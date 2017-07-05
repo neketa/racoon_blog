@@ -1,0 +1,42 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+
+    &-section {
+        margin-bottom: 20px;
+
+        &__title {
+            font-family: @headerFont;
+            text-transform: uppercase; 
+            border-bottom: 10px solid #6194C0;
+            color: #6194C0;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+
+            &:before {
+                background-color: #6194C0;
+                padding: 0 10px;
+                color: #fff;
+                margin-right: 20px;                
+            }
+
+            &--about:before {
+                content: "?";
+            }
+
+            &--stuff:before {
+                content: "!";
+            }
+
+        }
+
+        &__para {
+        font-family: @textFont;
+        margin: 10px 0;
+        color: #727171;
+        text-align: justify;             
+        }
+    }
+}
