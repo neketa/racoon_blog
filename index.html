@@ -8,7 +8,8 @@
         <title>Racoon Blog</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet/less" type="text/css" href="index.less" />
+        <script src="less.min.js" type="text/javascript"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -47,34 +48,45 @@
                                                 <span class="info__item-text">by E. Hyperracoon</span>
                                         </div>
                                         <ul class="socials" type="none">
-                                                <li class="socials__item socials__item--facebook">
-                                                        <svg class="socials__item-icon">
-                                                                <use xlink:href="sprite.svg#icon-facebook" />
-                                                        </svg>
-                                                        <span class="socials__item-counter">16</span>
+                                                <li>
+                                                        <button class="socials__item socials__item--facebook">
+                                                                <svg class="socials__item-icon">
+                                                                        <use xlink:href="sprite.svg#icon-facebook" />
+                                                                </svg>
+                                                                <span id="socialsCounter" class="socials__item-counter">16</span>
+                                                        </button>
+                                                        
                                                 </li>
-                                                <li class="socials__item socials__item--gplus">
-                                                        <svg class="socials__item-icon">
-                                                                <use xlink:href="sprite.svg#icon-gplus" />
-                                                        </svg>
-                                                        <span class="socials__item-counter">7</span></li>
-                                                <li class="socials__item socials__item--twitter">
-                                                        <svg class="socials__item-icon">
-                                                                <use xlink:href="sprite.svg#icon-twitter" />
-                                                        </svg>
-                                                        <span class="socials__item-counter">15</span>
+                                                <li>
+                                                        <button class="socials__item socials__item--gplus">
+                                                                <svg class="socials__item-icon">
+                                                                        <use xlink:href="sprite.svg#icon-gplus" />
+                                                                </svg>
+                                                                <span class="socials__item-counter">7</span></li>
+                                                        </button>
+                                                <li>
+                                                        <button class="socials__item socials__item--twitter">
+                                                                <svg class="socials__item-icon">
+                                                                        <use xlink:href="sprite.svg#icon-twitter" />
+                                                                </svg>
+                                                                <span class="socials__item-counter">15</span>
+                                                        </button>
                                                 </li>
-                                                <li class="socials__item socials__item--vk">
-                                                        <svg class="socials__item-icon">
-                                                                <use xlink:href="sprite.svg#icon-vk" />
-                                                        </svg>
-                                                        <span class="socials__item-counter">16</span>
+                                                <li >
+                                                        <button class="socials__item socials__item--vk">
+                                                                <svg class="socials__item-icon">
+                                                                        <use xlink:href="sprite.svg#icon-vk" />
+                                                                </svg>
+                                                                <span class="socials__item-counter">16</span>
+                                                        </button>
                                                 </li>
-                                                <li class="socials__item socials__item--yaru">
-                                                        <svg class="socials__item-icon">
-                                                                <use xlink:href="sprite.svg#icon-yaru" />
-                                                        </svg>
-                                                        <span class="socials__item-counter">1</span>
+                                                <li>
+                                                        <button class="socials__item socials__item--yaru">
+                                                                <svg class="socials__item-icon">
+                                                                        <use xlink:href="sprite.svg#icon-yaru" />
+                                                                </svg>
+                                                                <span class="socials__item-counter">1</span>
+                                                        </button>
                                                 </li>
                                         </ul>
                                 </div>
@@ -87,7 +99,7 @@
                                         assumenda dolore!
                                 </p>
                         </article>
-                        <div class="post__loader"></div>
+                        <div class="loader"></div>
                 </main>
                 <aside class="aside">
                         <section class="aside-section">
@@ -119,7 +131,7 @@
                         </ul>
                 </aside>
         </div>
-
+<script src="script.js"></script>
 </body>
 
 
